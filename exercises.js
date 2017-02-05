@@ -26,8 +26,10 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
-
-
+var bango1 = 100;
+console.log(bango1);
+var bango2 = 25;
+console.log(bango2);
 
 /*
  * #2
@@ -43,7 +45,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `sum`.
  * Console.log `sum` to test your code.
 */
-
+function add(num1, num2) {
+	var sum = num1 + num2;
+	return sum;
+}
+console.log(add(bango1, bango2));
 
 
 /*
@@ -59,8 +65,12 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `difference`.
  * Console.log `difference` to test your code.
 */ 
-
-
+function subtract(num1, num2){
+	var difference = num1 - num2;
+	return difference;
+	
+}
+console.log(subtract(bango1, bango2));
 
 /*
  * #4
@@ -75,6 +85,12 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `product`.
  * Console.log `product` to test your code.
 */
+function multiply(num1, num2){
+	var product= num1 * num2;
+	return product;
+}
+console.log(multiply(bango1, bango2));
+
 
 
 
@@ -91,8 +107,11 @@ console.log(testGreeting); // printing the output value of the function.
  * Invoke the function and assign it to a variable named `quotient`.
  * Console.log `quotient` to test your code.
 */
-
-
+function divide(num1, num2){
+	var quotient= num1 / num2;
+	return quotient;
+}
+console.log(divide(bango1, bango2));
 
 /*
  * #6
@@ -105,7 +124,6 @@ console.log(testGreeting); // printing the output value of the function.
  * This function will return the string "Mariah Carey has been married `x` amount of times." Where `x` is the value when you invoke the function. Invoke this function using the variable `sum`. 
  * Console.log your result.
 */
-
 
 
 /*
