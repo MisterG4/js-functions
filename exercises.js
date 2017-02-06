@@ -124,8 +124,12 @@ console.log(divide(bango1, bango2));
  * This function will return the string "Mariah Carey has been married `x` amount of times." Where `x` is the value when you invoke the function. Invoke this function using the variable `sum`. 
  * Console.log your result.
 */
-
-
+function checkSum(x){
+	return "Mariah Carey has been married " + x + " amount of times.";
+}
+var sum = add(bango1, bango2);
+console.log(sum);
+console.log(checkSum(sum));
 /*
  * #7
  * Function - checkDifference
@@ -137,8 +141,13 @@ console.log(divide(bango1, bango2));
  * This function will return the string "Last night I dreamt that I ate `x` Taco Bell soft tacos."  Where `x` is the value when you invoke the function. Invoke this function using the variable `difference`.
  * Console.log your results.
 */ 
-
-
+function checkDifference(x){
+	return " Last night I  dreamt that I ate "
++ x + " Taco Bell soft tacos."
+}
+var difference = subtract(bango1, bango2);
+console.log(difference);
+console.log(checkDifference(difference));
 
 /*
  * #8
@@ -150,8 +159,12 @@ console.log(divide(bango1, bango2));
  * This function will multiply the values stored in the sum and product.
  * Console.log your result.  
 */
-
-
+function checkProduct(){
+	return sum * product;
+}
+var product = multiply(bango1, bango2);
+console.log(product);
+console.log(checkProduct());
 
 /*
  * #9
@@ -164,8 +177,12 @@ console.log(divide(bango1, bango2));
  * Console.log your result.  
 */
 
-
-
+function checkQuotient(){
+	return product * quotient;
+}
+var quotient = divide(bango2, bango1);
+console.log(quotient);
+console.log(checkQuotient());
 /*
  * #10
  * Function - addThenSubtract
@@ -186,8 +203,7 @@ console.log(divide(bango1, bango2));
  * Console.log your result.
 */ 
 
-
-
+	
 /*
  * #11
  * Function - multiplyThenDivide
@@ -216,7 +232,9 @@ console.log(divide(bango1, bango2));
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
 
-
+function createFullName(firstName, lastName){
+	return myFullName
+}
 
 /*
  * #13 
