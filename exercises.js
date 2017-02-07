@@ -318,7 +318,18 @@ console.log(oneCap("i am here!"));
  * Call this function and pass in a number value.
  * Store the return value to a variable named `canDrink`. Console.log your result.
  */
+function verifyDrinkingAge(age){
+	if(age >= 21){
+		return true;
+	}else{ 
+		return false;
+	}
+	
 
+	
+}
+var canDrink = verifyDrinkingAge(24);
+console.log(canDrink);
 
 
 /**
@@ -328,7 +339,15 @@ console.log(oneCap("i am here!"));
  */
 
 
-
-
+function throwParty(){
+	if (canDrink === true){
+		return "Cheee Hoo! We going to da party!";
+	}else{ 
+		return "Meh, see you at Starbucks.";
+		}
+	
+}
+var canParty = throwParty;
+console.log(throwParty());
 
 
