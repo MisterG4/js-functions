@@ -26,9 +26,9 @@ console.log(testGreeting); // printing the output value of the function.
  *
  * These two variables will be used to invoke the functions #2 - #5.
 */ 
-var bango1 = 100;
+var bango1 = 5;
 console.log(bango1);
-var bango2 = 25;
+var bango2 = 6;
 console.log(bango2);
 
 /*
@@ -46,10 +46,11 @@ console.log(bango2);
  * Console.log `sum` to test your code.
 */
 function add(num1, num2) {
-	var sum = num1 + num2;
-	return sum;
+	return num1 + num2;
+
 }
-console.log(add(bango1, bango2));
+var sum = add(bango1, bango2);
+console.log(sum);
 
 
 /*
@@ -66,11 +67,12 @@ console.log(add(bango1, bango2));
  * Console.log `difference` to test your code.
 */ 
 function subtract(num1, num2){
-	var difference = num1 - num2;
-	return difference;
+	return num1 - num2;
+
 	
 }
-console.log(subtract(bango1, bango2));
+var difference = subtract(bango1, bango2);
+console.log(difference);
 
 /*
  * #4
@@ -86,10 +88,11 @@ console.log(subtract(bango1, bango2));
  * Console.log `product` to test your code.
 */
 function multiply(num1, num2){
-	var product= num1 * num2;
-	return product;
+	
+	return num1 * num2;
 }
-console.log(multiply(bango1, bango2));
+var product = multiply(bango1, bango2);
+console.log(product);
 
 
 
@@ -108,10 +111,11 @@ console.log(multiply(bango1, bango2));
  * Console.log `quotient` to test your code.
 */
 function divide(num1, num2){
-	var quotient= num1 / num2;
-	return quotient;
+	
+	return  num1 / num2;
 }
-console.log(divide(bango1, bango2));
+var quotient = divide(bango1, bango2);
+console.log(quotient);
 
 /*
  * #6
@@ -127,8 +131,7 @@ console.log(divide(bango1, bango2));
 function checkSum(x){
 	return "Mariah Carey has been married " + x + " amount of times.";
 }
-var sum = add(bango1, bango2);
-console.log(sum);
+
 console.log(checkSum(sum));
 /*
  * #7
@@ -142,8 +145,7 @@ console.log(checkSum(sum));
  * Console.log your results.
 */ 
 function checkDifference(x){
-	return " Last night I  dreamt that I ate "
-+ x + " Taco Bell soft tacos."
+	return " Last night I  dreamt that I ate " + x + " Taco Bell soft tacos."
 }
 var difference = subtract(bango1, bango2);
 console.log(difference);
@@ -162,9 +164,8 @@ console.log(checkDifference(difference));
 function checkProduct(){
 	return sum * product;
 }
-var product = multiply(bango1, bango2);
-console.log(product);
-console.log(checkProduct());
+console.log(sum, product);
+console.log(checkProduct(product));
 
 /*
  * #9
@@ -180,9 +181,8 @@ console.log(checkProduct());
 function checkQuotient(){
 	return product * quotient;
 }
-var quotient = divide(bango2, bango1);
-console.log(quotient);
-console.log(checkQuotient());
+console.log(product, quotient);
+console.log(checkQuotient(quotient));
 /*
  * #10
  * Function - addThenSubtract
@@ -202,7 +202,16 @@ console.log(checkQuotient());
  * This function will add the first two parameters together. Then with the sum of that operation, subtract it from the third parameter. PLEASE USE YOUR PREVIOUS FUNCTIONS FOR THIS EXERCISE. 
  * Console.log your result.
 */ 
+/*var bango3 = 3;
+var bango4 = 4;
+var bango5 = 5;
 
+function addThenSubtract(num1, num2, num3){
+
+	return (num1 +num2) - num3;
+
+}
+conosle.log(addThenSubtract(bango3, bango4, bango5));
 	
 /*
  * #11
@@ -232,9 +241,15 @@ console.log(checkQuotient());
  *  This function `returns` back a string which represents someone's full name. Invoke this function by passing in your first  and last name into the function. Store the return value into a variable named `myFullName` and console.log this variable to show your result.
 */
 
-function createFullName(firstName, lastName){
-	return myFullName
+/*function createFullName(firstName, lastName){
+	return "Anthony" + " " + "Garingan";
 }
+var firstName = "Anthony";
+
+var lastName = " Garingan"
+
+
+console.log(createFullName(firstName, lastName));
 
 /*
  * #13 
@@ -276,8 +291,10 @@ function createFullName(firstName, lastName){
  * Example input: "believe you can and you're halfway there."
  * Example output: "BELIEVE YOU CAN AND YOU'RE HALFWAY THERE."
 */
- 
-
+ function allCaps(str){
+ 	return str.toUpperCase();
+ }
+console.log(allCaps("hello"));
 
 /*
  * #16
@@ -286,8 +303,10 @@ function createFullName(firstName, lastName){
  * This function will capitalize only the first letter in the variable phase above. 
  * Console.log your result.
 */
-
-
+function oneCap(str){
+	return str[0].toUpperCase() + str.slice(1);
+}
+console.log(oneCap("i am here!"));
 
 /*
  * #17
